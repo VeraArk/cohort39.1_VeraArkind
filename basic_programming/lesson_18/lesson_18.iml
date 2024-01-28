@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="junit-jupiter-api-5.8.2" level="project" />
+    <orderEntry type="module" module-name="lesson_14" />
+    <orderEntry type="module" module-name="lesson_11" />
+    <orderEntry type="module" module-name="lesson_13" />
+    <orderEntry type="module" module-name="lesson_17" />
+    <orderEntry type="module" module-name="lesson_15" />
+    <orderEntry type="module" module-name="lesson_23" />
+    <orderEntry type="module" module-name="lesson_20" />
+    <orderEntry type="module" module-name="main_project" />
+    <orderEntry type="module" module-name="lesson_12" />
+    <orderEntry type="module" module-name="lesson_21" />
+    <orderEntry type="module" module-name="lesson_16" />
+    <orderEntry type="module" module-name="lesson_19" />
+  </component>
+</module>
