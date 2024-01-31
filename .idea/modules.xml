@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Lesson31/Lesson31.iml" filepath="$PROJECT_DIR$/Lesson31/Lesson31.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cohort39.1_VeraArkind.iml" filepath="$PROJECT_DIR$/.idea/cohort39.1_VeraArkind.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic_programming/consultation/consultation.iml" filepath="$PROJECT_DIR$/basic_programming/consultation/consultation.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic_programming/homework_solutions/homework_solutions.iml" filepath="$PROJECT_DIR$/basic_programming/homework_solutions/homework_solutions.iml" />
@@ -35,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/basic_programming/lesson_28/lesson_28.iml" filepath="$PROJECT_DIR$/basic_programming/lesson_28/lesson_28.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic_programming/lesson_29/lesson_29.iml" filepath="$PROJECT_DIR$/basic_programming/lesson_29/lesson_29.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic_programming/lesson_30/lesson_30.iml" filepath="$PROJECT_DIR$/basic_programming/lesson_30/lesson_30.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic_programming/lesson_31/lesson_31.iml" filepath="$PROJECT_DIR$/basic_programming/lesson_31/lesson_31.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic_programming/main_project/main_project.iml" filepath="$PROJECT_DIR$/basic_programming/main_project/main_project.iml" />
     </modules>
   </component>
