@@ -12,7 +12,7 @@ public class LanguageCard {
     // Создание дополнительной Мар, где будут храниться те же ключи, что и в основной мапе wordMap,
     // а в качестве значения - количество неправильных ответов при практике конкретной пары.
 
-    private static HashMap<String, Integer> wrongAttemptsMap = new HashMap<>();
+    private HashMap<String, Integer> wrongAttemptsMap = new HashMap<>();
     // счетчик неправильный попыток, который становится значением второй мапы
     int numberWrongAnswer = 1;
 
@@ -58,7 +58,7 @@ public class LanguageCard {
         if (!wrongAttemptsMap.containsKey(correctAnswer)) {
             wrongAttemptsMap.put(correctAnswer, numberWrongAnswer);
         } else {
-            int wrongAttemptsTempo = wrongAttemptsMap.get(correctAnswer).intValue() + 1;
+            int wrongAttemptsTempo = wrongAttemptsMap.get(correctAnswer) + 1;
             wrongAttemptsMap.put(correctAnswer, wrongAttemptsTempo);
         }
         System.out.println("Хотите посмотреть количество неправиьных ответов? Да/нет: ");
