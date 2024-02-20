@@ -3,7 +3,7 @@ package TaskFuncInterfase;
 
 import java.util.ArrayList;
 
-public class UsageStudents {
+public class UsageStudents  {
 
 
     public static void main(String[] args) {
@@ -66,6 +66,7 @@ public class UsageStudents {
             course.execute(st);
         }
     }
+
 }
 
 
