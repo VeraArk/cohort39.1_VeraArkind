@@ -7,6 +7,7 @@ public class Main {
         return perimeter * prisePerMetr;
     }
 
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -14,8 +15,7 @@ public class Main {
         System.out.println("Если вы хотите расчитать стоимость забора на участке, сообщите, какой формы ваш участок. " +
                 "Если круглой, нажмите - 1, если прямоугольной  - 2, если многоугольной - 3: ");
         int choise = scanner.nextInt();
-        System.out.println("Введите также стоимость метра забора в рублях: ");
-        double prisePerMetr = scanner.nextDouble();
+        double perimeter = 0;
 
 
         switch (choise) {
@@ -23,9 +23,7 @@ public class Main {
                 System.out.println("Ведите радиус участка в метрах: ");
                 double radius = scanner.nextDouble();
                 Circle yourShane = new Circle(radius);
-                double perimeter = yourShane.getPerimeter();
-                double prise = calculatePrise(perimeter, prisePerMetr);
-                System.out.println("Стоімость забора для вашего участка составляет " + prise);
+                perimeter = yourShane.getPerimeter();
                 break;
             }
             case 2: {
@@ -34,9 +32,7 @@ public class Main {
                 String sites = scanner.nextLine();
                 String[] siteOfRectangle = sites.split(" ");
                 Rectangle yourShane = new Rectangle(Double.parseDouble(siteOfRectangle[0]), Double.parseDouble(siteOfRectangle[1]));
-                double perimeter = yourShane.getPerimeter();
-                double prise = calculatePrise(perimeter, prisePerMetr);
-                System.out.println("Стоімость забора для вашего участка составляет " + prise + " рублей.");
+                perimeter = yourShane.getPerimeter();
                 break;
             }
             case 3: {
@@ -45,12 +41,19 @@ public class Main {
                 System.out.println("Сколько сторон имеет участок: ");
                 int amountOfSites = scanner.nextInt();
                 Polygon yourShane = new Polygon(site, amountOfSites);
-                double perimeter = yourShane.getPerimeter();
-                double prise = calculatePrise(perimeter, prisePerMetr);
-                System.out.println("Стоімость забора для вашего участка составляет " + prise);
+                perimeter = yourShane.getPerimeter();
                 break;
             }
-            default:  System.out.println("Вы ввелі неверное значение. К сожалению, мы не можем рассчитать цену для вашего участка");
+            default:
+                System.out.println("Вы ввелі неверное значение. К сожалению, мы не можем рассчитать цену для вашего участка");
+                return;
         }
+
+
+
+        System.out.println("Введите также стоимость метра забора в рублях: ");
+        double prisePerMetr = scanner.nextDouble();
+        double prise = calculatePrise(perimeter, prisePerMetr);
+        System.out.println("Стоімость забора для вашего участка составляет " + prise);
     }
 }

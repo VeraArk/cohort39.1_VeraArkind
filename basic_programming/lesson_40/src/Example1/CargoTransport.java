@@ -1,7 +1,8 @@
 package Example1;
 public interface CargoTransport {
-    double calculateCargoConsumption ();
 
-    void setCargo (double cargo);
+    double calculateCargoConsumptionPerKm();
+
     double getCargo();
+    void setCargo(double cargo);
 }
