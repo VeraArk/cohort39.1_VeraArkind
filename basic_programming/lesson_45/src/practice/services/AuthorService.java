@@ -10,9 +10,14 @@ import java.util.Scanner;
 // Слой бизнес-логики
 public class AuthorService {
     private AuthorRepository repository;
+    private BookService bookService;
 
-    public AuthorService(AuthorRepository repository) {
+    // в качестве аргумента передается объект интерфейса, не класса
+
+    public AuthorService(AuthorRepository repository, BookService bookService) {
+
         this.repository = repository;
+        this.bookService= bookService;
     }
 
     public List<Author> findAllAuthors(String name) {
@@ -47,4 +52,9 @@ public class AuthorService {
         Author author = new Author(authorName, yearOfBirth);
         repository.addAuthor(author);
     }
+
+    public void addAuthor(){
+        // допісать
+    }
+
 }

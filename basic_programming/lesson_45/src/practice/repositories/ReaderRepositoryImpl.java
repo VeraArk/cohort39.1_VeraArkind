@@ -3,14 +3,15 @@ package practice.repositories;
 import practice.interfaces.ReaderRepository;
 import practice.models.Reader;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReaderRepositoryImpl implements ReaderRepository {
 
     private List<Reader> readers;
 
-    public ReaderRepositoryImpl(List<Reader> readers) {
-        this.readers = readers;
+    public ReaderRepositoryImpl() {
+        this.readers = new ArrayList<>();
     }
 
     @Override

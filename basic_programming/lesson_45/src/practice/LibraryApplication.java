@@ -30,8 +30,8 @@ public class LibraryApplication {
         this.bookRepository = bookRepository;
         this.authorRepository = authorRepository;
         this.readerRepository = readerService;
-        this.bookService = bookService;
-        this.readerService = readerService1;
+        this.bookService = bookRepository;
+        this.readerService = new ReaderService(this.readerRepository);
         this.authorService = new AuthorService(this.authorRepository);
         this.scanner = new Scanner(System.in);
     }
@@ -105,8 +105,7 @@ public class LibraryApplication {
         AuthorRepository authorService = new AuthorRepositoryImpl();
         ReaderRepository readerService = new ReaderRepositoryImpl();
 
-
-        LibraryApplication app = new LibraryApplication(bookRepository, authorService, readerService, bookService1, readerService1);
+        LibraryApplication app = new LibraryApplication(bookRepository, authorService, readerService);
         app.run();
     }
 }

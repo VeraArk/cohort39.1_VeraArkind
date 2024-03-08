@@ -1,6 +1,5 @@
 package practice.services;
 import practice.interfaces.ReaderRepository;
-import practice.models.Author;
 import practice.models.Reader;
 
 import java.util.List;
